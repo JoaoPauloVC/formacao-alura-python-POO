@@ -58,3 +58,12 @@ class Conta:
         valor_disponível_para_saque = self.__saldo + self.__limite
         print(f"Valor Disponível para saque : {valor_disponível_para_saque}")
         return valor_saque <= valor_disponível_para_saque  # True se puder Sacar
+
+    # Método estático. Ele não requer um self.
+    @staticmethod
+    def codigo_banco():
+        return "exemplo_deste_banco"
+
+    @staticmethod
+    def codigos_bancos():
+        return {'Banco1': 'Chave1', 'Banco2': 'Chave2', 'Banco3': 'Chave3'}
